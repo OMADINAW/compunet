@@ -1,0 +1,424 @@
+html{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    margin: 0px;
+    padding: 0px; 
+  } 
+  /* Section N1 */
+  *{
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .partenaire{
+    background: #b9b3b3;
+    height: 600px;
+  }
+  nav{    
+      margin: 60px auto;
+      padding: 0;
+      display: block;
+      text-align: center;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      position: relative;
+      list-style: none;
+      cursor: default;
+  }
+  #main-cercle{
+      margin: auto;
+      width: 150%;
+      height: 150%;
+      border-radius: 100%;
+      position: relative;
+      left: -400px;
+      top: 500px;
+      cursor: default;
+      background: #686;
+      box-shadow:
+          inset 0 0 0 60px rgba(255,255,255,0.6),
+          0 1px 2px rgba(0,0,0,0.1);
+      transition: all 0.4s ease-in-out;
+      z-index: 0;
+  }
+  #center-circle{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      position: relative;
+      cursor: default;
+      z-index: 2;
+  }
+  li{
+      padding: 0;
+      display: block;
+      text-align: center;
+      width: 35%;
+      height: 35%;
+      border-radius: 50%;
+      position: absolute;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      list-style: none;
+      cursor: default; 
+      
+      box-shadow:
+          inset 0 0 0 16px rgba(255,255,255,0.6),
+          0 1px 2px rgba(0,0,0,0.1);
+      transition: all 0.4s ease-in-out;  
+      z-index: 3;
+  }
+  .ch-item:before {
+      content: '';
+      display: table;
+  }
+  .ch-img-1{
+    margin: 0% -10%;
+    background: #090;
+  }
+  .ch-img-2{
+    margin: 35% 65%;
+    background: #093;
+  }
+  .ch-img-3{
+    margin: 70% -10%;
+    background: #060;
+  }
+  #main-cercle:hover{
+    background: #151;
+    box-shadow:
+          inset 0 0 0 40px rgba(255,255,255,0.5),
+          0 1px 2px rgba(0,0,0,0.1);
+  }
+  .ch-info {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 70px;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      transform: scale(0);
+  }
+  .ch-info h3 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.2em;
+      margin: 0 20px;
+      padding: 10% 0 0 0;
+      height: 40%;
+      font-family: 'Open Sans', Arial, sans-serif;
+      text-shadow:
+          0 0 1px #fff,
+          0 1px 2px rgba(0,0,0,0.3);
+  }
+  .ch-info p {
+      color: #fff;
+      padding: 0px 0px;
+      font-style: italic;
+      margin: 0 30%;
+      font-size: 0.6em;
+      border-top: 1px solid rgba(255,255,255,0.5);
+      opacity: 0;
+      transition: all 1s ease-in-out 0.4s;
+  }
+  .ch-info p a {
+      display: block;
+      color: rgba(255,255,255,0.7);
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.6em;
+      letter-spacing: 1px;
+      padding-top: 5px;
+      font-family: 'Open Sans', Arial, sans-serif;
+  }
+   
+  .ch-info p a:hover {
+      color: rgba(255,242,34, 0.8);
+  }
+  .ch-item:hover {
+      width: 70%;
+      border-radius: 100px;
+      box-shadow:
+          inset 0 0 0 6px rgba(255,255,255,0.1),
+          0 1px 2px rgba(0,0,0,0.1);
+  }
+  .ch-item:hover .ch-info {
+      transform: scale(1);
+      opacity: 1;
+  }
+  .ch-item:hover .ch-info p {
+      opacity: 1;
+  }
+  
+
+/* Section N2 */
+#mon-cercle {
+    width: 400px; /* Remplacez la valeur par celle que vous souhaitez pour votre diamètre */
+    height: 400px; /* Idem */
+    border-radius: 15%; /* Cette propriété permet de définir la forme du bord de votre élément sous forme de cercle */
+    background-color:#e9e3e3; /* Remplacez la valeur par la couleur que vous souhaitez pour votre cercle */
+    border: 5px solid black;
+    position: relative;
+    left: 800px;
+    top:50px;
+    
+      
+   
+  }
+  .propo{
+    height: 500px;
+    background-color: #b9b3b3;
+  }
+  .image-container {
+    position: relative;
+  }
+  
+ 
+  .image-2 {
+    position: absolute;
+   top: -400px;
+   left: 50px;
+  }
+  .h1m{
+    background-color: rgb(91, 92, 91);
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(85,75,85);
+    background-color: rgb(255,255,255);
+  }
+  
+  .section {
+    display:flex;
+    background-color:#edede3;
+  }
+  
+  .hero-img img {
+    max-width:50%;
+  }
+  
+  .hero-img {
+    text-align:center;
+  }
+  
+  .hero-txt, .hero-img {
+    max-width:50%;
+  }
+  
+  h1 {
+    font-family: 'Noto Sans Mono', monospace;
+    text-transform:uppercase;
+  }
+  
+  p {
+    font-family:'Roboto';
+  }
+  
+  .hero-txt {
+    padding-top:5%;
+  }
+  
+  .buy {
+    background-color:white;
+    border:none;
+    box-shadow: 5px 2px 5px #888888;
+    border-radius:5%;
+    padding-top:5%;
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom:5%;
+  }
+  
+  .buy a {
+    color:black;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Noto Sans Mono';
+  }
+  
+  .subtitle {
+    margin-bottom:10%;
+  }
+  .mam{
+    position: relative;
+    top: -100px;
+    left: 600px;
+    text-align: center;
+    color: rgb(231, 12, 12);
+    
+  }
+  .mar img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -150px;
+    left: 720px;
+  }
+  .mar .bra{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -206px;
+    left: 780px;
+  }
+  .mar .bri{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -260px;
+    left: 840px;
+  }
+  
+  /*Partie Avantages*/
+  #avantages {
+    display:flex;
+    padding-bottom:5%;
+  }
+  
+  .bloc-avtg {
+    box-shadow : 2px 2px 10px grey;
+    border-radius:2%;
+    margin-left:2%;
+    margin-right:2%;
+    padding:3%;
+  }
+  
+  .h3-ttl {
+    text-align:center;
+    font-size:2em;
+    margin-top:2%;
+    margin-bottom:2%;
+  }
+  
+  .bloc-avtg h4 {
+    text-align:center;
+    font-size:1.3em;
+    margin-bottom:2%;
+  }
+  
+  .picto-cont{
+    text-align:center;
+  }
+  
+  .picto {
+    width:15%;
+  }
+  
+  /*TÉMOIGNAGES*/
+  #temoignages {
+    display:flex;
+  justify-content:space-around;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .temoignage{
+    position: relative;
+    top: 100px;
+  }
+  
+  .img-temoignage img {
+    width:20%;
+    border-radius:50%;
+  }
+  
+  /*Media queries (mobile)*/
+  @media only screen and (max-width:768px) {
+    .section {
+      flex-direction:column;
+    }
+    
+    .hero-img, .hero-txt {
+     width:100%;
+      max-width:100%;
+    }
+  }
+  .h1 {
+    text-align: center;
+  }
+  .acordeon {
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+  }
+  .acordeon .contenedor {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  /* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+  
+  .acordeon .etiqueta {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+  .acordeon .etiqueta::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  .acordeon .contenido {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .acordeon hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }  
+  
+  
+  .accordion-header {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion-header:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
